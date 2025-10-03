@@ -12,8 +12,7 @@ REM Ordner für RAW-Dateien erstellen
 if not exist "%OUTPUT_DIR%" mkdir "%OUTPUT_DIR%"
 
 for %%f in ("%INPUT_DIR%\*.bmp", "%INPUT_DIR%\*.jpg", "%INPUT_DIR%\*.jpeg", "%INPUT_DIR%\*.png") do (
-    echo Konvertiere %%~nxf ...
-    python bmp_to_raw_rgb.py "%%f" "%OUTPUT_DIR%\%%~nf.raw" "%ENDIAN%"
+    python image_to_raw_rgb.py "%%f" "%OUTPUT_DIR%\%%~nf.raw" "%ENDIAN%"
 )
 
 echo.
