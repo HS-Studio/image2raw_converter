@@ -7,4 +7,5 @@
 
 <pre><code>pip install pillow</code></pre>
 
-3. run the convert_all_bmp.bat
+3. change ENDIAN in convert_all.bat to big or little
+4. run the convert_all.bat
